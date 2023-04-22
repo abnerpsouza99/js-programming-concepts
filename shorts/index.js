@@ -1,27 +1,24 @@
-// // Function
-// const sumFunction = function (a, b) {
-//     return a + b;
-// }
-// // Arrow Function
-// const sumArrowFunction = (a, b) => a + b;
 
+const numero = 11;
+let mensagem = '';
 
-// console.log(sumFunction(1, 1))
-// console.log(sumArrowFunction(1, 1))
-
-
-
-const pessoa = {
-    nome: 'Abner',
-    canalYt: 'Canal - eu sou programador'
+// If convencional
+if (numero > 10) {
+    mensagem = `Número é maior que 10`;
+} else {
+    mensagem = `Número não é maior que 10`;
 }
 
-// 1 Notacao de ponto
-console.log(pessoa.canalYt)
+console.log(mensagem);
 
-// 2 Notacao de colchetes
-console.log(pessoa['canalYt'])
+// If ternário
+mensagem = numero > 10 ? `Número é maior que 10`
+    : `Número não é maior que 10`;
 
-// 3 Destructuring
-const { canalYt } = pessoa
-console.log(canalYt)
+console.log(mensagem);
+
+
+
+
+
+
